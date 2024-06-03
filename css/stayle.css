@@ -1,0 +1,549 @@
+/*start general components*/
+html {
+  --main-color: #1c1c1c;
+  --second-color: #748182;
+  --main-duration: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.center-with-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anchor-text-white {
+  color: white !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+.header {
+  position: relative;
+}
+.header h3 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--main-color);
+  margin: auto;
+  width: fit-content;
+  z-index: 1;
+}
+.header h3::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  inset: 0;
+  background-image: url(../media/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+  top: 25px;
+}
+
+/*end general components*/
+.toTop a {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  font-size: 30px;
+  z-index: 99999999;
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  color: white;
+}
+/*start navbar*/
+
+nav {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.navbar .container .navbar-nav .nav-item {
+  padding: 0px 20px;
+}
+.navbar .container .navbar-nav .nav-item .nav-link {
+  padding: 0;
+  color: #111;
+  font-size: 14px;
+}
+.navbar .container .navbar-nav .nav-item .nav-link {
+  position: relative;
+  overflow: hidden;
+}
+.navbar .container .navbar-nav .nav-item .nav-link::after {
+  content: " ";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: -100%;
+  transition: var(--main-duration);
+}
+
+.navbar .container .navbar-nav .nav-item .nav-link.active::after {
+  content: " ";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: var(--main-duration);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  border: none;
+}
+/*end navbar*/
+
+/* start landing */
+.landing {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../media/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.landing .landing-content h3 {
+  font-size: 55px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.landing .landing-content h1 {
+  font-size: 60px;
+  margin: 12px 0px;
+}
+@media (max-width: 640px) {
+  .landing .landing-content h1 {
+    font-size: 30px;
+  }
+}
+.landing .landing-content h1 span.iam {
+  font-weight: 200;
+}
+
+.landing .landing-content h1 #element {
+  position: relative;
+}
+
+.landing .landing-content h1 #element::after {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  margin-left: 3px;
+}
+.landing .landing-content .social-icons {
+  padding-top: 20px;
+}
+.landing .landing-content .social-icons a {
+  display: inline-block;
+}
+
+.landing .landing-content .social-icons a i {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.555);
+  font-size: 14px;
+}
+
+/* end landing */
+
+/* start about */
+.about .personal-image {
+  position: relative;
+}
+.about .personal-image::after {
+  content: "";
+  position: absolute;
+  background-image: url(../media/dots.png);
+  width: 70%;
+  height: 80%;
+  left: -10px;
+  bottom: -24px;
+  z-index: -1;
+}
+
+.about .personal-info .progress {
+  margin-bottom: 30px;
+  height: 25px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.253);
+}
+.about .personal-info .progress .progress-bar {
+  background-color: #343434;
+}
+
+.about .personal-info h3 {
+  color: var(--main-color);
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.about .personal-info p {
+  color: var(--second-color);
+  font-size: 15px;
+}
+
+.about .personal-info h3 + p {
+  letter-spacing: 3px;
+}
+.about .personal-info h3 + p + p span {
+  font-weight: bold;
+}
+.about .personal-info .cv,
+.about .personal-info .contact {
+  display: inline-block;
+  padding: 10px 30px;
+  transition: var(--main-duration);
+  border: 1px solid var(--main-color);
+}
+
+.about .personal-info .cv {
+  background-color: var(--main-color);
+}
+
+.about .personal-info .cv:hover {
+  background-color: white;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color);
+}
+
+.about .personal-info .contact:hover {
+  background-color: var(--main-color);
+  color: white !important;
+}
+
+/* end about */
+
+/* strat services */
+.services {
+  background-color: #f7f7f7;
+}
+.services .cards .myCardContainer .myCard {
+  padding: 20px 20px;
+}
+.services .cards .myCardContainer .myCard .icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(170, 168, 168, 0.534);
+  padding: 40px;
+  transition: var(--main-duration);
+}
+.services .cards .myCardContainer .myCard .icon i {
+  font-size: 30px;
+}
+
+.services .cards .myCardContainer .myCard h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.services .cards .myCardContainer .myCard p {
+  color: var(--second-color);
+  font-size: 14px;
+}
+
+.services .cards .myCardContainer .myCard:hover .icon {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* end services */
+
+/* start port */
+.portfolio .tab-content .my-card .card-layer h4 {
+  font-size: 12px;
+  font-weight: 700;
+}
+.portfolio .tab-content .my-card .card-layer {
+  background-color: white;
+  transition: 0.7s;
+  opacity: 0;
+  left: 5px;
+  right: 5px;
+  top: 10px;
+  bottom: -5px;
+}
+.portfolio .tab-content .my-card:hover .card-layer {
+  inset: 5px;
+  opacity: 1;
+}
+.portfolio .tab-content .my-card .card-layer .read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.portfolio .tab-content .my-card .card-layer .read-more div {
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: var(--main-duration); */
+  border: 1px solid var(--main-color);
+}
+
+.portfolio .tab-content .my-card .card-layer .read-more div:hover {
+  background-color: white;
+}
+.portfolio .tab-content .my-card .card-layer .read-more div:hover i {
+  color: var(--main-color) !important;
+}
+.portfolio .tab-content .my-card .card-layer {
+  row-gap: 30px;
+}
+
+.portfolio .tab-content .my-card:hover .card-layer {
+  row-gap: 10px;
+}
+
+.portfolio .my-navs button {
+  color: black;
+  padding: 0;
+  margin: 0px 20px;
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+}
+.portfolio .my-navs button.active {
+  background-color: white !important;
+  color: black;
+  position: relative;
+  transition: 0.3s;
+}
+.portfolio .my-navs button::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: -100%;
+  transition: var(--main-duration);
+}
+.portfolio .my-navs button.active::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0%;
+  transition: var(--main-duration);
+}
+
+/* end port */
+
+/* start testimonials */
+
+.testimonials {
+  background-color: #f7f7f7;
+  height: calc(100vh - 66px);
+}
+.testimonials .container .carousel .carousel-inner img {
+  width: 150px;
+  height: 150px;
+}
+.testimonials .container .carousel .carousel-inner p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: var(--second-color);
+}
+.testimonials .container .carousel .carousel-inner h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--main-color);
+}
+.testimonials .container .carousel .carousel-inner span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--second-color);
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  margin-right: 10px;
+}
+.carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #869791;
+}
+/* end testimonials */
+
+/* start achievments  */
+.achievments .myblock {
+  color: var(--main-color);
+}
+.achievments .myblock i {
+  font-size: 30px;
+}
+.achievments .myblock h4 {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 20px 0px;
+}
+.achievments .myblock p {
+  color: var(--second-color);
+  font-weight: 600;
+  font-size: 15px;
+}
+/* end achievments  */
+/* start our team  */
+.our-team {
+  background-color: #f7f7f7;
+}
+.myCards .myCardsContainer .myCard {
+  background-color: #5b5b5b;
+  color: white;
+}
+
+.myCards .myCardsContainer .myCard .image {
+  overflow: hidden;
+  transition: var(--main-duration);
+}
+.myCards .myCardsContainer .myCard .image img {
+  transition: var(--main-duration);
+}
+
+.myCards .myCardsContainer .myCard .image:hover img {
+  transform: scale(1.2);
+}
+
+.myCards .myCardsContainer .myCard p {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+.myCards .myCardsContainer .myCard h4 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.myCards .myCardsContainer .myCard .image .layer {
+  background-color: white;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  transition: all 0.7s;
+}
+.myCards .myCardsContainer .myCard:hover .layer {
+  opacity: 0.9;
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+.myCards .myCardsContainer .myCard .image .layer .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.myCards .myCardsContainer .myCard .image .layer .icon:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+/* end our team  */
+
+/* start contacts  */
+
+.contact-us .find-us .myblock .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  color: var(--main-color);
+  transition: var(--main-duration);
+}
+.contact-us .find-us .myblock h4 {
+  font-size: 16px;
+}
+
+.contact-us .find-us .myblock .icon:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.contact-us .find-us .myblock .icon i {
+  font-size: 22px;
+}
+.contact-us .find-us .myblock p {
+  color: var(--second-color);
+  font-size: 14px;
+}
+
+input,
+textarea {
+  background-color: #f4f4f4 !important;
+  border: none !important;
+}
+
+form .click {
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 30px;
+  border: 1px solid var(--main-color) !important;
+}
+/* end contacts  */
+.myfooter {
+  background-color: var(--main-color);
+}
+.myfooter p {
+  color: var(--second-color);
+  font-size: 13px;
+}
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@media (min-width: 1400px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
