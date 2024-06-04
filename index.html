@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/stayle.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navId">
@@ -102,10 +103,20 @@
     <!-- start about -->
 
     <section class="about container row m-auto px-4 py-5 my-5" id="about">
-      <div class="personal-image col-12 col-lg-5 mb-5 mb-lg-0">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-sine"
+        class="personal-image col-12 col-lg-5 mb-5 mb-lg-0"
+      >
         <img class="w-100" src="media/hero.jpg" alt="hero" />
       </div>
-      <div class="personal-info col-12 col-lg-7 mt-5 mt-lg-0">
+
+      <div
+        data-aos="fade-left"
+        data-aos-duration="500"
+        class="personal-info col-12 col-lg-7 mt-5 mt-lg-0"
+      >
         <h3>Aboute Me.</h3>
         <p>UI / UX DESIGNER & WEB DEVELOPER</p>
         <p class="pb-4">
@@ -177,7 +188,11 @@
           <h3>Services.</h3>
         </div>
         <div class="cards row m-auto">
-          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3">
+          <div
+            data-aos-duration="1000"
+            data-aos="zoom-in-right"
+            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
+          >
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -191,7 +206,11 @@
               </p>
             </div>
           </div>
-          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3">
+          <div
+            data-aos-duration="1000"
+            data-aos="zoom-in"
+            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
+          >
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -205,7 +224,11 @@
               </p>
             </div>
           </div>
-          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3">
+          <div
+            data-aos-duration="1000"
+            data-aos="zoom-in-left"
+            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
+          >
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -219,7 +242,11 @@
               </p>
             </div>
           </div>
-          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3">
+          <div
+            data-aos-duration="1000"
+            data-aos="zoom-in-right"
+            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
+          >
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -233,7 +260,11 @@
               </p>
             </div>
           </div>
-          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3">
+          <div
+            data-aos-duration="1000"
+            data-aos="zoom-in"
+            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
+          >
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -247,7 +278,11 @@
               </p>
             </div>
           </div>
-          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3">
+          <div
+            data-aos-duration="1000"
+            data-aos="zoom-in-left"
+            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
+          >
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -1003,6 +1038,10 @@
         loopCount: Infinity,
         cursorChar: "",
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
