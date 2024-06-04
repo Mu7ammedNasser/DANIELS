@@ -3,8 +3,10 @@ html {
   --main-color: #1c1c1c;
   --second-color: #748182;
   --main-duration: 0.5s;
-   overflow-x: hidden;
+   
 }
+body {
+  overflow-x: hidden;
 
 a {
   text-decoration: none;
