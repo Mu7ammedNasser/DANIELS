@@ -3,7 +3,7 @@ html {
   --main-color: #1c1c1c;
   --second-color: #748182;
   --main-duration: 0.5s;
-} 
+}
 section {
   overflow-x: hidden;
 }
@@ -236,6 +236,13 @@ nav {
   border: 1px solid var(--main-color);
 }
 
+@media (max-width: 640px) {
+  .about .personal-info .cv,
+  .about .personal-info .contact {
+    padding: 10px 10px;
+  }
+}
+
 .about .personal-info .cv {
   background-color: var(--main-color);
 }
@@ -345,6 +352,11 @@ nav {
   border-radius: 0;
   overflow: hidden;
 }
+@media (max-width: 640px) {
+  .portfolio .my-navs button {
+    margin: 0px 10px;
+  }
+}
 .portfolio .my-navs button.active {
   background-color: white !important;
   color: black;
@@ -375,43 +387,39 @@ nav {
 /* end port */
 
 /* start testimonials */
+.testimonial{
+  background-color: #F7F7F7;
+}
 
-.testimonials {
-  background-color: #f7f7f7;
-  height: calc(100vh - 66px);
+.testimonial .testimonial-title h2{
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 4;
 }
-.testimonials .container .carousel .carousel-inner img {
-  width: 150px;
-  height: 150px;
+
+.testimonial .testimonial-title h2::after{
+  content:"";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;   
 }
-.testimonials .container .carousel .carousel-inner p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 30px;
-  color: var(--second-color);
+
+.testimonial .carousel .carousel-item .client-img img{
+  width: 90px;
 }
-.testimonials .container .carousel .carousel-inner h3 {
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--main-color);
-}
-.testimonials .container .carousel .carousel-inner span {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--second-color);
-}
-.carousel-indicators [data-bs-target] {
+
+.testimonial .container .carousel-indicators [data-bs-target="#carouselExampleIndicators"]{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #d6d6d6;
-  margin-right: 10px;
-}
-.carousel-indicators .active {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #869791;
+  background-color: rgb(144, 144, 144);
 }
 /* end testimonials */
 
@@ -494,7 +502,9 @@ nav {
 /* end our team  */
 
 /* start contacts  */
-
+.contact-us .header h3 {
+  font-size: 39px;
+}
 .contact-us .find-us .myblock .icon {
   width: 60px;
   height: 60px;
