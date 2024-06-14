@@ -3,10 +3,10 @@ html {
   --main-color: #1c1c1c;
   --second-color: #748182;
   --main-duration: 0.5s;
-   
-}
-body {
+} 
+section {
   overflow-x: hidden;
+}
 
 a {
   text-decoration: none;
@@ -186,6 +186,9 @@ nav {
 /* end landing */
 
 /* start about */
+.about {
+  overflow-x: hidden;
+}
 .about .personal-image {
   position: relative;
 }
@@ -432,6 +435,7 @@ nav {
 /* end achievments  */
 /* start our team  */
 .our-team {
+  overflow-x: hidden;
   background-color: #f7f7f7;
 }
 .myCards .myCardsContainer .myCard {
