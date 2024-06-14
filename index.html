@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/stayle.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navId">
@@ -103,20 +103,10 @@
     <!-- start about -->
 
     <section class="about container row m-auto px-4 py-5 my-5" id="about">
-      <div
-        data-aos="fade-right"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-        class="personal-image col-12 col-lg-5 mb-5 mb-lg-0"
-      >
+      <div class="personal-image col-12 col-lg-5 mb-5 mb-lg-0 wow slideInLeft">
         <img class="w-100" src="media/hero.jpg" alt="hero" />
       </div>
-
-      <div
-        data-aos="fade-left"
-        data-aos-duration="500"
-        class="personal-info col-12 col-lg-7 mt-5 mt-lg-0"
-      >
+      <div class="personal-info col-12 col-lg-7 mt-5 mt-lg-0 wow slideInRight">
         <h3>Aboute Me.</h3>
         <p>UI / UX DESIGNER & WEB DEVELOPER</p>
         <p class="pb-4">
@@ -188,11 +178,7 @@
           <h3>Services.</h3>
         </div>
         <div class="cards row m-auto">
-          <div
-            data-aos-duration="1000"
-            data-aos="zoom-in-right"
-            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
-          >
+          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3 wow rotateInDownLeft">
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -206,11 +192,7 @@
               </p>
             </div>
           </div>
-          <div
-            data-aos-duration="1000"
-            data-aos="zoom-in"
-            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
-          >
+          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3 wow bounceIn">
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -224,11 +206,7 @@
               </p>
             </div>
           </div>
-          <div
-            data-aos-duration="1000"
-            data-aos="zoom-in-left"
-            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
-          >
+          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3 wow rotateInDownRight">
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -242,11 +220,7 @@
               </p>
             </div>
           </div>
-          <div
-            data-aos-duration="1000"
-            data-aos="zoom-in-right"
-            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
-          >
+          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3 wow rotateInDownLeft">
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -260,11 +234,7 @@
               </p>
             </div>
           </div>
-          <div
-            data-aos-duration="1000"
-            data-aos="zoom-in"
-            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
-          >
+          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3 wow bounceIn"">
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -278,11 +248,7 @@
               </p>
             </div>
           </div>
-          <div
-            data-aos-duration="1000"
-            data-aos="zoom-in-left"
-            class="myCardContainer col-12 col-md-6 col-lg-4 p-3"
-          >
+          <div class="myCardContainer col-12 col-md-6 col-lg-4 p-3 wow rotateInDownRight">
             <div class="myCard rounded-2 text-center bg-white border-secondary">
               <div
                 class="icon m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle"
@@ -378,8 +344,8 @@
             aria-labelledby="pills-all-tab"
             tabindex="0"
           >
-            <div class="cards row m-auto">
-              <div class="card-container p-2 col-12 col-md-6 col-lg-4">
+            <div class="cards row m-auto ">
+              <div class="card-container p-2 col-12 col-md-6 col-lg-4 wow ">
                 <div class="my-card position-relative">
                   <img
                     class="w-100"
@@ -878,8 +844,8 @@
       <div class="header py-5 mb-5">
         <h3>Our Team.</h3>
       </div>
-      <div class="myCards container row m-auto mb-5">
-        <div class="myCardsContainer col-12 col-md-6 col-lg-4">
+      <div class="myCards container row m-auto mb-5 ">
+        <div class="myCardsContainer col-12 col-md-6 col-lg-4 wow bounceInLeft" data-wow-duration="2s">
           <div class="myCard rounded-3">
             <div class="image position-relative">
               <img class="w-100 d-block" src="media/1.jpg" alt="team member" />
@@ -907,7 +873,7 @@
             </div>
           </div>
         </div>
-        <div class="myCardsContainer col-12 col-md-6 col-lg-4">
+        <div class="myCardsContainer col-12 col-md-6 col-lg-4 wow bounceInDown" data-wow-duration="2s">
           <div class="myCard rounded-3">
             <div class="image position-relative">
               <img class="w-100 d-block" src="media/2.jpg" alt="team member" />
@@ -935,7 +901,7 @@
             </div>
           </div>
         </div>
-        <div class="myCardsContainer col-12 col-md-6 col-lg-4">
+        <div class="myCardsContainer col-12 col-md-6 col-lg-4 wow  bounceInRight" data-wow-duration="2s">
           <div class="myCard rounded-3">
             <div class="image position-relative">
               <img class="w-100 d-block" src="media/1.jpg" alt="team member" />
@@ -974,22 +940,22 @@
         <h3>Contact Us.</h3>
       </div>
 
-      <div class="find-us row m-auto">
-        <div class="myblock mb-5 col-12 col-lg-4 text-center">
+      <div class="find-us row m-auto overflow-hidden">
+        <div class="myblock mb-5 col-12 col-lg-4 text-center wow bounceInLeft" data-wow-duration="2s">
           <div class="icon mb-3 rounded-circle m-auto center-with-flex">
             <i class="fa-solid fa-location-arrow"></i>
           </div>
           <h4>Address</h4>
           <p>6834 Hollywood Blvd - Los Angeles CA</p>
         </div>
-        <div class="myblock col-12 col-lg-4 text-center">
+        <div class="myblock col-12 col-lg-4 text-center wow bounceInUp" data-wow-duration="1s">
           <div class="icon mb-3 rounded-circle m-auto center-with-flex">
             <i class="fa-solid fa-envelope"></i>
           </div>
           <h4>Email</h4>
           <p>Support@website.com</p>
         </div>
-        <div class="myblock col-12 col-lg-4 text-center">
+        <div class="myblock col-12 col-lg-4 text-center wow bounceInRight" data-wow-duration="2s">
           <div class="icon mb-3 rounded-circle m-auto center-with-flex">
             <i class="fa-solid fa-phone"></i>
           </div>
@@ -998,24 +964,25 @@
         </div>
       </div>
 
-      <form class="row g-3 mb-5">
-        <div class="col-md-6">
+      <form class="row g-3 mb-5 overflow-hidden">
+        <div class="col-md-6  wow slideInLeft" data-wow-duration="2s">
           <input type="text" placeholder="Name" class="form-control" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow slideInRight" data-wow-duration="2s">
           <input type="email" placeholder="Email" class="form-control" />
         </div>
 
         <div>
           <textarea
-            class="form-control col-12"
+            class="form-control col-12 wow rotateInUpLeft"
+            data-wow-duration="1s"
             rows="5"
             placeholder="Comments"
           ></textarea>
         </div>
 
         <div class="col-md-12">
-          <button type="submit" class="btn click">Submit</button>
+          <button type="submit" class="btn click wow bounceInUp" data-wow-duration="2s">Submit</button>
         </div>
       </form>
     </section>
@@ -1039,9 +1006,9 @@
         cursorChar: "",
       });
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
-      AOS.init();
+      new WOW().init();
     </script>
   </body>
 </html>
